@@ -1,11 +1,4 @@
 spring:
-  datasource:
-    username: debuggeandoideas
-    hikari:
-      maximum-pool-size: 5
-      connection-timeout: 20000
-    url: jdbc:postgresql://localhost:5432/companies
-    password: udemy
   application:
     name: companies-crud
 server:
