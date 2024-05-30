@@ -2,7 +2,7 @@ spring:
   datasource:
     username: ${db.username}
     hikari:
-      maximum-pool-size: ${db.maximum-pool-size}
+      maximum-pool-size:  ${db.maximum-pool-size}
       connection-timeout: ${db.connection-timeout}
     url: ${db.url}
     password: ${db.password}
@@ -11,7 +11,7 @@ spring:
   profiles:
     default: default
   config:
-    import: "optional:configserver:http://localhost:7777"
+    import: 'optional:configserver:http://localhost:7777'
 server:
   servlet:
     context-path: /companies-crud
